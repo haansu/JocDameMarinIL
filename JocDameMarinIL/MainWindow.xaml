@@ -1,0 +1,28 @@
+﻿<Window x:Name="wndMain" x:Class="JocDameMarinIL.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JocDameMarinIL"
+        mc:Ignorable="d"
+        Title="Joc de Dame" Height="500" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Menu Height="20" VerticalAlignment="Top">
+            <MenuItem Header="File">
+                <MenuItem x:Name="menuItemNewGame" Header="New Game" Click="menuItemNewGame_Click"/>
+                <MenuItem x:Name="menuItemLoadGame" Header="Load Game"/>
+                <MenuItem x:Name="menuItemSaveGame" Header="Save Game"/>
+                <MenuItem x:Name="menuItemScores" Header="Scores"/>
+                <MenuItem x:Name="menuItemExit" Header="Exit"/>
+            </MenuItem>
+            <MenuItem Header="Help">
+                <MenuItem x:Name="menuItemAbout" Header="About" Click="menuItemAbout_Click"/>
+                <MenuItem x:Name="menuItemOptions" Header="Options"/>
+            </MenuItem>
+        </Menu>
+        <Button x:Name="btnOk" Content="OK" Width="50" HorizontalAlignment="Center" Margin="0,404,0,0" VerticalAlignment="Top" Click="btnOk_Click"/>
+        <StackPanel x:Name="pnlMain">
+            
+        </StackPanel>
+    </Grid>
+</Window>
